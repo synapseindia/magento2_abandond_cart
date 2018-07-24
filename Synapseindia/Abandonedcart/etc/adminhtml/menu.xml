@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Synapseindia_Abandonedcart::parent" title="Abandonedcart" module="Synapseindia_Abandonedcart" sortOrder="100" resource="Synapseindia_Abandonedcart::parent"/>
+        <add id="Synapseindia_Abandonedcart::index" title="Abandonedcart List" module="Synapseindia_Abandonedcart" sortOrder="10" action="reports/report_shopcart/abandoned" resource="Synapseindia_Abandonedcart::index" parent="Synapseindia_Abandonedcart::parent"/>
+		 <add id="Synapseindia_Abandonedcart::config" title="Configuration" module="Synapseindia_Abandonedcart" sortOrder="10" action="adminhtml/system_config/edit/section/abandonedcart/" resource="Synapseindia_Abandonedcart::abandonedcart_config" parent="Synapseindia_Abandonedcart::parent"/>
+		
+    </menu>
+</config>
